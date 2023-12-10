@@ -1,0 +1,64 @@
+There is a Springboot Project named as IntelliBotBackend.  This contains Springboot APIs.
+
+Below are the Folder structuring defined :
+
+1. Folder Structure starts from com.example.intelliJBotBackend followed by the controller, service, repository, entity folders.
+
+2. For the test cases we have similar project structure just instead of main we have test package for the test cases.
+
+Exception :
+1. ALl the exception classes will be under com.example.IntelliBotBackend.exception
+Folder is below : 
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/exception
+
+Entity :
+
+1. It uses persistence package javax.persistence
+2. ALl the entity classes will be under com.example.IntelliBotBackend.entity
+Files are as belows :
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/ImageEntity.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/ModerationEntity.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/PromptResultEntity.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/PromptsEntity.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/RegisteredUser.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/entity/UserHistory.java
+
+Repository :
+
+1. It uses repository as a {JPA}.
+2. ALl the Repository classes will be under com.example.IntelliBotBackend.repository
+Files are as belows :
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/ImageEntityRepository.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/ModerationEntityRepository.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/PromptHistoryByUserRepository.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/PromptResultRepository.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/PromptsRepository.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/repository/UserHistoryRepository.java
+
+
+Service:
+1. ALl the service classes will be under com.example.IntelliBotBackend.service
+File are as belows :
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/PromptsServiceImpl.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/PromptsService.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/ModerationServiceImpl.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/ModerationService.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/ImageServiceImpl.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/ImageService.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/AuthServiceImpl.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/AuthService.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/UserHistoryService.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/service/UserHistoryServiceImpl.java
+
+Controller:
+1. ALl the controller classes will be under com.example.IntelliBotBackend.controller
+Files are as belows :
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/controller/ImageController.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/controller/ModerationController.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/controller/PromptsController.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/controller/AuthController.java
+/Users/srivastavautk/Documents/intellijbotbackend/IntelliBotBackend/src/main/java/com/example/IntelliBotBackend/controller/UserHistoryController.java
+
+Note :
+
+1. To inject other necessary classes used @Autowired.

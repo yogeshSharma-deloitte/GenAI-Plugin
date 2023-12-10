@@ -1,0 +1,31 @@
+# Ignore build directories and compiled class files
+/build/
+/bin/
+/out/
+
+# Ignore Gradle-specific files and directories
+/.gradle/
+/.idea/
+.gradle/
+
+# Ignore system and IDE files
+/.DS_Store
+/Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore dependency lock files
+gradle-wrapper.jar
+gradle-wrapper.properties
+Save the .gitignore file.
+Once you've created and configured the .gitignore file, Git will automatically exclude the specified files and directories when you commit your changes. This helps keep your repository clean and prevents unnecessary files from being tracked.
+
+Make sure to commit the .gitignore file to your Git repository so that other team members working on the project will also use the same ignore rules. You can add, commit, and push the file to your remote repository as follows:
+
+bash
+Copy code
+git add .gitignore
+git commit -m "Add .gitignore file"
+git push
+This will ensure that the ignore rules are shared with your team.

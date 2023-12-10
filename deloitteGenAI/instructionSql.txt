@@ -1,0 +1,33 @@
+CREATE DATABASE EmployeeDB;
+USE EmployeeDB;
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    PhoneNumber VARCHAR(15),
+    HireDate DATE,
+    JobID INT,
+    Salary DECIMAL(10,2),
+    ManagerID INT,
+    DepartmentID INT
+);
+
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50),
+    ManagerID INT
+);
+
+CREATE TABLE Jobs (
+    JobID INT PRIMARY KEY,
+    JobTitle VARCHAR(50),
+    MinSalary DECIMAL(10,2),
+    MaxSalary DECIMAL(10,2)
+);
+
+ALTER TABLE Employees
+ADD FOREIGN KEY (JobID) REFERENCES Jobs(JobID),
+ADD FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
+ADD FOREIGN KEY (ManagerID) REFERENCES Employees(EmployeeID);
